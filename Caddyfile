@@ -1,0 +1,10 @@
+localhost
+tls self_signed
+
+root public
+log stdout
+errors stderr
+
+fastcgi / 127.0.0.1:9000 php
+on startup php-fpm start
+on shutdown php-fpm stop
